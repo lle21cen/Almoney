@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="300dp"
+    android:background="@drawable/white_round_border_purple_back"
+    android:layout_height="150dp">
+
+    <TextView
+        android:text="내 계좌등록이&#160;완료되었습니다!"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/main_confirm_dialog_btn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:text="확인"
+        android:textAlignment="center"
+        android:textColor="#7401ae" />
+</RelativeLayout>

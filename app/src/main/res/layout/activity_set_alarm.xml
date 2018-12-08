@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8405e6"
+    tools:context=".SetAlarmActivity">
+
+    <LinearLayout
+        android:id="@+id/set_alarm_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알릴 금액"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/set_alarm_money"
+        android:hint="알릴 금액"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:inputType="number"
+        android:layout_below="@id/set_alarm_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/set_alarm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_alarm_money"
+        android:layout_marginTop="10dp"
+        android:text="알림설정"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/set_alarm_start_day_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_alarm_text">
+
+
+        <TextView
+            android:id="@+id/set_alarm_start_day"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_border_white_purple_solid"
+            android:text="알림 시작일"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_drop_down_white_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_alarm_period_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_alarm_start_day_layout">
+
+
+        <TextView
+            android:id="@+id/set_alarm_period_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_border_white_purple_solid"
+            android:text="알림 주기"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_drop_down_white_24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/period_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/set_alarm_period_layout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/period_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ad000000"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/period_2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="#ad000000"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/period_3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="#ad000000"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/period_4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="#ad000000"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/period_5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="#ad000000"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/period_6"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="#ad000000"
+            android:text="6"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/period_7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:background="#ad000000"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_alarm_confirm_btn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:text="확인"
+        android:textAlignment="center"
+        android:textColor="#7401ae" />
+
+</RelativeLayout>

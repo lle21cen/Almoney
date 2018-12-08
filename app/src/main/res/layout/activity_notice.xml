@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8405e6"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".NoticeActivity">
+
+    <LinearLayout
+        android:id="@+id/notice_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알림 받는 분"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notice_nim_ggye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notice_title_layout"
+        android:layout_marginTop="10dp"
+        android:text="김재은님께"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/notice_won_alarimy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notice_nim_ggye"
+        android:layout_marginTop="15dp"
+        android:text="1000원 알리기"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/notice_won_alarimy"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/notice_alarimy_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알리미 시작하기"
+            android:textColor="#8405e6"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/motice_what_messanger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_alarimy_start"
+            android:text="어떤 메신저를 이용하시겠어요?"
+            android:textColor="#8405e6"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/motice_what_messanger"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/kakao_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/kakao" />
+
+            <Button
+                android:id="@+id/gmail_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/gmail" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/msg" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
